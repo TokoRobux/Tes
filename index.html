@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>Davinzblox – Toko Robux</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#fff;--card:#fff;--tx:#10284d;--mut:#6b7f9e;--pri:#1e88e5;--dk:#0d47a1;--soft:#eef4fb;--ln:#d7e4f5;--rbi:url(robux.jpg);--hx:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill-rule='evenodd' d='M50 3 91 26.500v47L50 97 9 73.500v-47zM50 31a19 19 0 1 0 .1 0z'/%3E%3C/svg%3E");box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1a2e;--card:#12294a;--tx:#eaf3ff;--mut:#9db8dd;--soft:#173a66;--ln:#244a7c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:"Plus Jakarta Sans","Nunito","Segoe UI",system-ui,sans-serif;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+svg.i{width:1em;height:1em;fill:currentColor;vertical-align:-.12em}
+.rbx{display:inline-block;width:1em;height:1em;background:currentColor;-webkit-mask:var(--hx) center/contain no-repeat;mask:var(--hx) center/contain no-repeat;vertical-align:-.12em}
+.hasrb .rbx{-webkit-mask:none;mask:none;mix-blend-mode:multiply;background:var(--rbi) center/contain no-repeat}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--ln)}
+.lg{width:36px;height:36px;border-radius:50%;border:2px solid var(--pri);flex:none}
+.sb{flex:1;min-width:0;display:flex;align-items:center;gap:8px;border:1.5px solid var(--ln);border-radius:22px;padding:0 12px;margin:0}
+.sb input{flex:1;min-width:0;border:0;outline:0;background:none;color:var(--tx);font:inherit;padding:9px 0}
+.fl{border:1.5px solid var(--ln);border-radius:20px;padding:7px 11px;font-size:13px;font-weight:800;cursor:pointer;user-select:none}
+.promo{background:linear-gradient(90deg,#d5ebff,#eaf6ff);padding:12px 16px;text-align:center;font-size:14px;color:#10284d}.promo a{color:#1565c0;font-weight:700;cursor:pointer}
+.stats{background:var(--dk);color:#fff;display:flex;justify-content:space-around;gap:10px;padding:22px 14px 6px;font-size:13px;flex-wrap:wrap}
+.stats div{display:flex;gap:10px;align-items:center}.c{width:40px;height:40px;border-radius:50%;background:#fff;color:var(--dk);display:grid!important;place-items:center;font-size:20px;flex:none}
+.stats b{display:block;font-size:16px}
+.band{background:linear-gradient(var(--dk) 0 58%,var(--bg) 58%);padding:26px 0 14px}
+.car{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 14px 14px;max-width:960px;margin:0 auto}
+.card{flex:none;width:min(76vw,290px);scroll-snap-align:start;background:var(--card);border-radius:20px;padding:10px;box-shadow:0 4px 16px #0d47a130;cursor:pointer;transition:transform .2s;align-self:flex-start}.card:hover{transform:translateY(-4px)}
+.ph{position:relative}.ph img{width:100%;height:230px;object-fit:cover;object-position:50% 25%;border-radius:12px;display:block}
+.tg{position:absolute;left:0;bottom:0;display:flex}.tg span{font-size:12px;font-weight:800;color:#fff;padding:7px 12px}.tg .h{background:#e53935;border-radius:0 12px 0 12px}.tg .t{background:#1a47e0}
+.card h3{margin:14px 8px 2px;font-size:22px}.card small{display:block;margin:12px 8px;color:var(--mut);font-size:15px}
+.dash{border-top:2px dashed var(--ln);margin:10px 8px 0;padding:14px 0 6px;font-size:19px}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}h2{font-size:26px;margin:26px 0 2px}.sub{color:var(--mut);margin:0 0 14px}
+.cat{display:flex;gap:12px;overflow-x:auto;padding:0 0 22px}
+.ct{flex:none;width:min(44vw,210px);background:var(--soft);border-radius:18px;padding:16px;font-size:20px;position:relative;height:130px;cursor:pointer;overflow:hidden}
+.ct .ch{position:absolute;right:14px;top:16px;width:26px;height:26px;border-radius:50%;background:#4b5b73;color:#fff;display:grid;place-items:center;font-size:14px}
+.ct .rbx{position:absolute;left:18px;bottom:14px;width:52px;height:52px;color:var(--pri)}
+.ct em{position:absolute;right:0;bottom:12px;background:#e53935;color:#fff;font-style:normal;font-weight:800;font-size:14px;padding:7px 12px;border-radius:12px 0 0 12px}
+.ban{background:var(--dk);color:#fff;padding:30px 0;margin-top:6px}.ban h2{font-size:34px;margin:0 0 6px}.ban p{margin:0;font-size:18px}
+.page{display:none}.page.on{display:block}
+.steps{display:flex;gap:6px;margin:12px 0 16px}.steps div{flex:1;text-align:center;font-size:12px;font-weight:700;padding:9px 2px;border-radius:10px;background:var(--soft);color:var(--mut)}
+.steps .on{background:var(--pri);color:#fff}.steps .ok{background:#2e9b5a;color:#fff}
+.box{background:var(--card);border:1.5px solid var(--ln);border-radius:16px;padding:16px;margin-bottom:14px}
+.packs{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.pack{border:2px solid var(--ln);background:var(--card);border-radius:12px;padding:10px;font:inherit;cursor:pointer;text-align:left;font-size:13px;color:var(--mut)}
+.pack b{display:flex;gap:6px;align-items:center;font-size:16px;color:var(--tx)}.pack b i{color:var(--pri)}.pack.sel{border-color:var(--pri);background:var(--soft)}
+label{font-weight:700;display:block;margin-bottom:6px}
+input.f{width:100%;border:2px solid var(--ln);border-radius:12px;padding:12px;font:inherit;background:var(--card);color:var(--tx)}
+input[type=range]{width:100%;accent-color:var(--pri);margin:10px 0 0}
+.err{color:#d32f2f;font-size:13px;min-height:16px;margin-top:4px}.hint{font-size:13px;color:var(--mut);margin-top:4px}
+.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--ln)}
+.btn,.btn2{display:block;width:100%;border:0;border-radius:12px;padding:13px;margin-top:10px;font:inherit;font-weight:800;background:var(--pri);color:#fff;cursor:pointer;text-align:center;text-decoration:none;font-size:15px}
+.btn2{background:var(--soft);color:var(--pri);padding:10px}.btn:active,.btn2:active{transform:scale(.98)}
+.back{background:none;border:0;color:var(--pri);font:inherit;font-weight:700;cursor:pointer;padding:14px 0 0}.lk{color:var(--pri);font-weight:700;cursor:pointer}
+.avc{display:flex;gap:12px;align-items:center;margin:10px 0}.av{width:64px;height:64px;border-radius:14px;background:var(--soft);flex:none;object-fit:cover}
+.chip{font-size:11px;font-weight:800;background:#fff3cd;color:#8a6200;border-radius:8px;padding:3px 8px}.chip.ok{background:#d6f5e0;color:#1b6b3a}
+.pf{width:100%;max-height:220px;object-fit:contain;border-radius:10px;background:var(--soft);margin-top:8px}
+.tabs{display:flex;gap:8px;margin-bottom:12px}.tabs button{flex:1;padding:10px;border:0;border-radius:10px;font:inherit;font-weight:800;background:var(--soft);color:var(--mut);cursor:pointer}.tabs .on{background:var(--pri);color:#fff}
+nav{position:fixed;bottom:0;left:0;right:0;background:var(--card);display:flex;border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom,0px);z-index:6}
+nav a{flex:1;text-align:center;padding:9px 0;font-size:11px;color:var(--mut);cursor:pointer;position:relative}nav a.on{color:var(--pri);background:var(--soft)}
+nav svg,nav .rbx{display:block;margin:0 auto 3px;font-size:24px}
+#cb{position:absolute;top:3px;left:55%;background:#e53935;color:#fff;border-radius:9px;font-size:10px;padding:1px 5px;display:none}
+#toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%) translateY(30px);background:#10284d;color:#fff;padding:12px 18px;border-radius:12px;opacity:0;transition:.3s;z-index:9;max-width:90%;text-align:center;font-size:14px;pointer-events:none}#toast.on{opacity:1;transform:translateX(-50%)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="hm" viewBox="0 0 24 24"><path d="M12 2.500 3 10v10.500h6v-6h6v6h6V10z"/></symbol>
+<symbol id="rc" viewBox="0 0 24 24"><path d="M5 2h14a1 1 0 0 1 1 1v19l-3-2-2.500 2-2.500-2-2.500 2L7 20l-3 2V3a1 1 0 0 1 1-1zm3 5v2h8V7zm0 4v2h8v-2z"/></symbol>
+<symbol id="sr" viewBox="0 0 24 24"><path d="M10 3a7 7 0 1 0 4.300 12.500l5 5 1.400-1.400-5-5A7 7 0 0 0 10 3zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></symbol>
+<symbol id="ct" viewBox="0 0 24 24"><path d="M2 3h3l.6 3H21l-2 8H8l.4 2H19v2H7L4 5H2zm7 16a1.500 1.500 0 1 1 0 3 1.500 1.500 0 0 1 0-3zm9 0a1.500 1.500 0 1 1 0 3 1.500 1.500 0 0 1 0-3z"/></symbol>
+<symbol id="ck" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.500 14.500L6 12l1.400-1.400 3.100 3.100 6-6L18 9z"/></symbol>
+<symbol id="us" viewBox="0 0 24 24"><path d="M12 12a4.500 4.500 0 1 0 0-9 4.500 4.500 0 0 0 0 9zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></symbol>
+</defs></svg>
+<header><img class="lg" src="logo.jpg" alt="Davinzblox"><label class="sb"><svg class="i" style="font-size:22px;color:var(--mut)"><use href="#sr"/></svg><input id="q" data-p="search"></label><svg class="i" style="font-size:26px" onclick="go('cart')"><use href="#ct"/></svg><div class="fl" id="lg" onclick="sw()">ID</div></header>
+<div class="promo"><span data-t="promo"></span> <a data-t="promoL" onclick="op('u')"></a></div>
+<section id="home" class="page on">
+<div class="stats"><div><span class="c"><i class="rbx"></i></span><span><b>80–600</b><span data-t="a1"></span></span></div><div><span class="c"><svg class="i"><use href="#ck"/></svg></span><span><b data-t="tmu"></b><span data-t="a2"></span></span></div><div><span class="c"><svg class="i"><use href="#rc"/></svg></span><span><b data-t="tmg"></b><span data-t="a3"></span></span></div></div>
+<div class="band"><div class="car">
+<div class="card" onclick="op('u')"><div class="ph"><img src="username.jpg" alt=""><div class="tg"><span class="h">HOT</span><span class="t">TRENDING 1</span></div></div><h3 data-t="cardu"></h3><small data-t="v10"></small><div class="dash" data-t="shop"></div></div>
+<div class="card" onclick="op('g')"><div class="ph"><img src="gamepass.jpg" alt=""><div class="tg"><span class="h">HOT</span></div></div><h3 data-t="cardg"></h3><small data-t="v6"></small><div class="dash" data-t="shop"></div></div>
+</div></div>
+<div class="wrap"><h2 data-t="catT"></h2><p class="sub" data-t="catS"></p>
+<div class="cat"><div class="ct" onclick="op('u')">Robux<span class="ch">›</span><i class="rbx"></i><em data-t="cheap"></em></div><div class="ct" onclick="op('g')">Gamepass<span class="ch">›</span><i class="rbx"></i><em data-t="ez"></em></div><div class="ct" onclick="op('b')"><span style="display:block;padding-right:30px">Brookhaven Passes</span><span class="ch">›</span><i class="rbx"></i><em data-t="newb"></em></div></div></div>
+<div class="ban"><div class="wrap"><h2 data-t="banT"></h2><p data-t="banS"></p></div></div>
+</section>
+<div class="wrap">
+<section id="buy" class="page"><button class="back" data-t="back" onclick="go('home')"></button>
+<h2 id="bt" style="margin-top:8px"></h2><p class="sub" id="bs"></p>
+<div class="steps"><div id="s1" class="on" data-t="p1"></div><div id="s2" data-t="p2"></div><div id="s3" data-t="p3"></div></div>
+<div class="box"><label data-t="pick"></label><div class="packs" id="packs"></div></div>
+<div class="box" id="ownBox"><label for="amt" data-t="own"></label><input class="f" id="amt" type="number" inputmode="numeric" step="10"><input type="range" id="rg" step="10"><div class="err" id="e1"></div></div>
+<div class="box"><label for="usr" data-t="usrL"></label><div style="display:flex;gap:8px"><input class="f" id="usr" placeholder="Davinz123" autocomplete="off" maxlength="20"></div><div class="hint" data-t="uh"></div><div class="err" id="e2"></div>
+<div id="gp" style="display:none;margin-top:10px"><label for="lnk" data-t="lnkL"></label><input class="f" id="lnk" placeholder="https://www.roblox.com/game-pass/..."><div class="hint" id="gh"></div><div class="err" id="e3"></div></div></div>
+<div class="box"><div class="row"><span data-t="sA"></span><b id="rA">-</b></div><div class="row"><span data-t="sU"></span><b id="rU">-</b></div><div class="row"><span data-t="sE"></span><b id="rE"></b></div><div class="row"><span data-t="sP"></span><b id="rP">-</b></div>
+<button class="btn2" data-t="addC" onclick="cadd()"></button><button class="btn" data-t="ordB" onclick="place()"></button></div></section>
+<section id="cart" class="page"><h2 data-t="cartT"></h2><div id="cl"></div></section>
+<section id="ord" class="page"><h2 data-t="ordT"></h2><div id="ol"></div><a class="btn2" data-t="help" href="https://wa.me/message/QORLQPTZWILEJ1" target="_blank" rel="noopener"></a></section>
+<section id="acc" class="page"><h2 data-t="accT"></h2>
+<div id="authF" class="box"><div class="tabs"><button id="tin" class="on" data-t="login" onclick="tab('in')"></button><button id="tup" data-t="reg" onclick="tab('up')"></button></div>
+<label for="an" data-t="nm"></label><input class="f" id="an" autocomplete="username" maxlength="20"><label for="ap" style="margin-top:10px" data-t="pw"></label><input class="f" id="ap" type="password" autocomplete="current-password"><div class="err" id="ae"></div><button class="btn" id="ab" onclick="doAuth()"></button><div class="hint" data-t="accN"></div></div>
+<div id="accI" class="box" style="display:none"><h3 id="hi" style="margin:0 0 8px"></h3><button class="btn2" data-t="myO" onclick="go('ord')"></button><a class="btn2" data-t="help" href="https://wa.me/message/QORLQPTZWILEJ1" target="_blank" rel="noopener"></a><button class="btn2" data-t="out" onclick="logout()"></button></div><div id="own" style="display:none"><h3 style="margin:16px 0 8px">Panel Owner</h3>
+<div class="box"><b>Statistik</b><div class="row"><span>Pesanan hari ini</span><b id="oT">0</b></div><div class="row"><span>Omzet hari ini</span><b id="oR">0</b></div><div class="row"><span>Total pesanan</span><b id="oA">0</b></div><div class="hint">Hanya menghitung pesanan yang dibuat di HP ini.</div></div>
+<div class="box"><b>Ubah harga</b><div id="oP"></div><button class="btn" onclick="cpy()">Salin kode harga</button><div class="hint">Setelah menyalin: buka file harga.js di GitHub, tekan ikon pensil, hapus semua isinya, tempel, lalu Commit changes. Harga baru baru berlaku untuk semua orang setelah itu.</div></div></div></section>
+</div>
+<nav><a id="n1" class="on" onclick="go('home')"><svg class="i"><use href="#hm"/></svg><span data-t="home"></span></a><a id="n2" onclick="op(mode)"><i class="rbx"></i><span data-t="topup"></span></a><a id="n3" onclick="go('cart')"><svg class="i"><use href="#ct"/></svg><span data-t="cart"></span><b id="cb">0</b></a><a id="n4" onclick="go('ord')"><svg class="i"><use href="#rc"/></svg><span data-t="ord"></span></a><a id="n5" onclick="go('acc')"><svg class="i"><use href="#us"/></svg><span id="n5t"></span></a></nav>
+<div id="toast"></div>
+<script>
+var HARGA={
+u:[[80,14000],[100,16000],[160,28000],[200,32000],[240,42000],[300,46000],[320,55000],[400,62000],[500,76000],[600,92000]],
+g:[[100,15000],[200,29000],[300,43000],[400,55000],[500,69000],[600,83000]],
+b:[["VIP",72000],["Estates Unlocked",62000],["Vehicle Pack",62000],["Vehicle Boost Upgrade",33000],["Vehicle Speed Unlocked",33000],["Vehicle Customization",40000],["Land Unlocked",45000],["Music Unlocked",33000],["Prison Landmark",69000],["Disaster Pack",45000],["Boat Pack",40000],["On Demand Fire",22000],["Horse Upgrade",25000],["House Pets",62000],["Theme Pack",40000],["Premium",42000],["Vehicle Upgrade",21000],["Penthouse",5000]]
+};
+</script>
+<script src="harga.js"></script>
+<script>
+var WA="https://wa.me/message/QORLQPTZWILEJ1",UR=/^[A-Za-z0-9_]{3,20}$/,P1="https://users.roproxy.com/v1/usernames/users",P2="https://thumbnails.roproxy.com/v1/users/avatar-headshot?userIds=";
+var $=function(i){return document.getElementById(i)},rp=function(n){return"Rp"+n.toLocaleString("id-ID")};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return"&#"+c.charCodeAt(0)+";"})}
+function LS(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+var im0=new Image();im0.onload=function(){document.documentElement.classList.add("hasrb")};im0.src="robux.jpg";
+var T={promo:["Beli Robux di Davinzblox, cukup pakai username!","Buy Robux at Davinzblox, username only!"],promoL:["Cek Sekarang →","Check Now →"],search:["Cari Robux...","Search Robux..."],
+a1:["Robux per order","Robux per order"],a2:["Via Username","Via Username"],a3:["Via Gamepass","Via Gamepass"],tmu:["10–30 menit","10–30 min"],tmg:["5–7 hari","5–7 days"],
+cardu:["Robux via Username","Robux via Username"],cardg:["Robux via Gamepass","Robux via Gamepass"],v10:["10 Variant","10 Variants"],v6:["6 Variant","6 Variants"],shop:["Belanja Sekarang","Shop Now"],
+catT:["Kategori Pilihan","Featured Categories"],catS:["Nyari apa nih? Pilih yang kamu suka!","Looking for something? Pick one!"],cheap:["Murah!","Cheap!"],ez:["Game Jadi Ez!","Games made easy!"],
+banT:["Top Up Robux Murah!","Cheap Robux Top Up!"],banS:["Mulai dari Rp138/Robux. Cukup username Roblox, tanpa password!","From Rp138/Robux. Just your Roblox username, no password!"],
+back:["← Kembali","← Back"],su:["Pilih 80–600 Robux. Cukup username, tanpa password.","Pick 80–600 Robux. Username only, no password."],sg:["Pilih 100–600 Robux. Kamu buat gamepass, kami yang beli.","Pick 100–600 Robux. You make a gamepass, we buy it."],
+p1:["1. Pilih Jumlah","1. Amount"],p2:["2. Akun Roblox","2. Account"],p3:["3. Pesan","3. Order"],pick:["Pilih paket","Choose a pack"],own:["Atau tentukan sendiri","Or set your own"],
+usrL:["Username Roblox kamu","Your Roblox username"],chkB:["Cek Akun","Check"],lnkL:["Link gamepass kamu","Your gamepass link"],gh:["Pasang harga gamepass {n} Robux (sudah termasuk pajak Roblox 30%).","Set gamepass price to {n} Robux (includes 30% Roblox tax)."],
+sA:["Jumlah","Amount"],sU:["Username","Username"],sE:["Estimasi masuk","Delivery time"],sP:["Total","Total"],addC:["Masukkan Keranjang","Add to Cart"],ordB:["Pesan via WhatsApp","Order via WhatsApp"],
+eAmt:["Pilih {a}–600 Robux ya!","Pick {a}–600 Robux!"],eUsr:["Username 3–20 huruf/angka/_ tanpa spasi.","Username: 3–20 letters/numbers/_, no spaces."],eLnk:["Tempel link gamepass dari roblox.com ya.","Paste a gamepass link from roblox.com."],
+eVer:["Cek dan konfirmasi akun Roblox dulu ya.","Please check and confirm the Roblox account first."],load:["Mencari akun...","Looking up account..."],nf:["Username tidak ketemu. Cek lagi ejaannya.","Username not found. Check the spelling."],
+fail:["Gagal cek avatar (koneksi/server).","Couldn’t check avatar (network/server)."],retry:["Coba lagi","Retry"],skip:["Lanjut tanpa cek","Continue without check"],skd:["Lanjut tanpa avatar. Pastikan username benar!","Continuing without avatar. Make sure the username is right!"],
+uh:["Periksa lagi ejaan username-nya, jangan sampai salah ya!","Double-check the spelling of your username!"],isU:["Ini akunmu?","Is this your account?"],yes:["Ya, benar","Yes"],no:["Bukan","No"],okA:["✓ Akun terkonfirmasi","✓ Account confirmed"],
+need:["Masuk dulu ya biar pesananmu tersimpan.","Please sign in so your orders are saved."],cartT:["Keranjang","Cart"],cartE:["Keranjang masih kosong. Simpan dulu, bayar kalau uangnya sudah ada!","Your cart is empty. Save now, pay when you have the money!"],
+co:["Checkout Semua","Check Out All"],rm:["Hapus","Remove"],ordT:["Pesanan Saya","My Orders"],ordE:["Belum ada pesanan.","No orders yet."],upl:["Upload foto bukti transfer","Upload payment proof"],
+sent:["Bukti terkirim, menunggu dicek","Proof sent, awaiting check"],unp:["Menunggu bukti transfer","Waiting for payment proof"],pwa:["Kirim fotonya juga ke WhatsApp penjual","Also send the photo to the seller on WhatsApp"],pok:["Bukti tersimpan!","Proof saved!"],
+login:["Masuk","Sign in"],reg:["Daftar","Sign up"],nm:["Nama akun Davinzblox","Davinzblox account name"],pw:["Kata sandi (min. 6)","Password (min. 6)"],eLog:["Nama atau kata sandi salah.","Wrong name or password."],eEx:["Nama sudah dipakai.","Name already taken."],
+eNm:["Nama 3–20 huruf/angka/_.","Name: 3–20 letters/numbers/_."],ePw:["Kata sandi minimal 6 karakter.","Password must be at least 6 characters."],hi:["Halo, {n}!","Hi, {n}!"],out:["Keluar","Sign out"],help:["Bantuan WhatsApp","WhatsApp Help"],
+accN:["Akun disimpan di perangkat ini.","Accounts are stored on this device."],myO:["Lihat Pesanan","View Orders"],accT:["Akun","Account"],ordd:["Pesanan dibuat! Upload bukti transfer di sini.","Order created! Upload your payment proof here."],added:["Masuk keranjang!","Added to cart!"],
+cardb:["Brookhaven Passes","Brookhaven Passes"],sb:["Pilih pass Brookhaven. Cukup username Roblox kamu.","Pick a Brookhaven pass. Just your Roblox username."],tmb:["Setelah pembayaran dicek","After payment is checked"],ePass:["Pilih pass dulu ya!","Pick a pass first!"],newb:["Baru!","New!"],
+qr:["Bayar pakai QRIS (scan gambar di bawah), lalu upload bukti transfer. Kalau QRIS belum muncul, minta ke WhatsApp penjual.","Pay with QRIS (scan below), then upload your proof. If the QR doesn’t show, ask the seller on WhatsApp."],
+home:["Beranda","Home"],topup:["Top Up","Top Up"],cart:["Keranjang","Cart"],ord:["Pesanan","Orders"],acc:["Masuk","Sign in"],accI:["Akun","Account"]};
+var M={u:{min:80,pts:HARGA.u},b:{items:HARGA.b},g:{min:100,pts:HARGA.g}};
+var L=+(LS("dz_l")||0),mode="u",amt=0,pi=-1,after=null,am="in",db=LS("dz_u")||{},ses=LS("dz_s");if(!db[ses])ses=null;
+function t(k,o){var s=T[k][L];for(var x in o)s=s.replace("{"+x+"}",o[x]);return s}
+function me(){return ses?db[ses]:null}function save(){LS("dz_u",db);LS("dz_s",ses)}
+function price(n,m){var p=M[m||mode].pts;for(var i=0;i<p.length;i++){if(p[i][0]==n)return p[i][1];if(p[i][0]>n){var a=p[i-1],b=p[i];return Math.round((a[1]+(b[1]-a[1])*(n-a[0])/(b[0]-a[0]))/100)*100}}return p[p.length-1][1]}
+function toast(m){var e=$("toast");e.textContent=m;e.classList.add("on");setTimeout(function(){e.classList.remove("on")},3500)}
+function H(s){if(window.crypto&&crypto.subtle)return crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return("0"+x.toString(16)).slice(-2)}).join("")});return Promise.resolve(btoa(s))}
+var NAV={home:"n1",buy:"n2",cart:"n3",ord:"n4",acc:"n5"};
+function go(p){for(var k in NAV){$(k).classList.toggle("on",k==p);$(NAV[k]).classList.toggle("on",k==p)}if(p=="cart")rCart();if(p=="ord")rOrd();if(p=="acc")rAcc();scrollTo(0,0)}
+function op(m){mode=m;pi=-1;$("ownBox").style.display=m=="b"?"none":"block";$("usr").value="";$("lnk").value="";$("amt").value="";$("rg").value=M[m].min;$("packs").innerHTML="";
+(m=="b"?M.b.items:M[m].pts).forEach(function(p,i){var b=document.createElement("button");b.className="pack";if(m=="b"){b.dataset.n=i;b.innerHTML="<b>"+p[0]+"</b>"+rp(p[1]);b.onclick=function(){pi=i;upd()}}else{b.dataset.n=p[0];b.innerHTML="<b><i class='rbx'></i>"+p[0]+"</b>"+rp(p[1]);b.onclick=function(){$("amt").value=p[0];upd()}}$("packs").appendChild(b)});upd();go("buy")}
+function upd(){var m=M[mode],n=parseInt($("amt").value)||0,u=$("usr").value.trim();amt=n;
+if(mode=="b"){var it=M.b.items[pi];document.querySelectorAll(".pack").forEach(function(x){x.classList.toggle("sel",x.dataset.n==pi)});$("bt").textContent=t("cardb");$("bs").textContent=t("sb");$("rE").textContent=t("tmb");$("gp").style.display="none";$("rA").textContent=it?it[0]:"-";$("rP").textContent=it?rp(it[1]):"-";$("rU").textContent=u||"-";var kk=!!it;$("s1").className=kk?"ok":"on";$("s2").className=kk&&UR.test(u)?"ok":kk?"on":"";$("s3").className=kk&&UR.test(u)?"on":"";return}
+$("bt").textContent=t("card"+mode);$("bs").textContent=t("s"+mode);$("rE").textContent=t("tm"+mode);$("amt").min=$("rg").min=m.min;$("amt").max=$("rg").max=600;$("amt").placeholder=m.min;$("gp").style.display=mode=="g"?"block":"none";
+if(n)$("rg").value=Math.min(600,Math.max(m.min,n));document.querySelectorAll(".pack").forEach(function(b){b.classList.toggle("sel",b.dataset.n==n)});
+var ok=n>=m.min&&n<=600;$("e1").textContent=n&&!ok?t("eAmt",{a:m.min}):"";$("rA").textContent=ok?n+" Robux":"-";$("rP").textContent=ok?rp(price(n)):"-";$("rU").textContent=u||"-";
+$("gh").textContent=mode=="g"&&ok?t("gh",{n:Math.ceil(n/.7)}):"";
+$("s1").className=ok?"ok":"on";$("s2").className=ok&&UR.test(u)?"ok":ok?"on":"";$("s3").className=ok&&UR.test(u)?"on":""}
+$("amt").oninput=upd;$("rg").oninput=function(){$("amt").value=this.value;upd()};$("usr").oninput=upd;
+function form(){if(mode=="b"){var it=M.b.items[pi];upd();if(!it){toast(t("ePass"));return}var u0=$("usr").value.trim();if(!UR.test(u0)){$("e2").textContent=t("eUsr");return}$("e2").textContent="";return{id:Date.now(),mode:"b",amt:0,pass:it[0],price:it[1],rb:u0,img:"",link:""}}var m=M[mode];upd();if(amt<m.min||amt>600){$("e1").textContent=t("eAmt",{a:m.min});return}
+var u=$("usr").value.trim();if(!UR.test(u)){$("e2").textContent=t("eUsr");return}
+$("e2").textContent="";
+var l=$("lnk").value.trim();if(mode=="g"&&!/roblox\.com/i.test(l)){$("e3").textContent=t("eLnk");return}$("e3").textContent="";
+return{id:Date.now(),mode:mode,amt:amt,price:price(amt),rb:u,img:"",link:mode=="g"?l:""}}
+function need(f){if(me())return true;toast(t("need"));after=f;tab("in");go("acc");return false}
+function cadd(){var o=form();if(!o||!need(cadd))return;me().cart.push(o);save();bdg();toast(t("added"))}
+function place(){var o=form();if(!o||!need(place))return;mk([o])}
+function lb(o){return o.mode=="b"?o.pass:o.amt+" Robux"}
+function wt(o){return"ID: "+o.oid+"\n"+(o.mode=="b"?"Brookhaven Pass":"Robux "+(o.mode=="u"?"via username":"via gamepass"))+"\nPesanan: "+lb(o)+"\nTotal: "+rp(o.price)+"\nUsername Roblox: "+o.rb+(o.link?"\nLink gamepass: "+o.link:"")}
+function mk(a){var m=me();a.forEach(function(o){o.oid="DZ"+String(o.id).slice(-6);o.t=Date.now();o.proof="";m.orders.unshift(o)});
+var tx="Halo kak, aku mau pesan:\n\n"+a.map(wt).join("\n\n");try{navigator.clipboard.writeText(tx)}catch(e){}
+window.open(WA,"_blank");save();bdg();toast(t("ordd"));go("ord")}
+function bdg(){var n=me()?me().cart.length:0;$("cb").textContent=n;$("cb").style.display=n?"block":"none"}
+function av(o){return"<span class='av' style='display:grid;place-items:center;font-size:32px;color:var(--pri)'><i class='rbx'></i></span>"}
+function rCart(){var m=me(),h=$("cl");if(!m){h.innerHTML="<div class='box'>"+t("need")+" <a class='lk' onclick=\"go('acc')\">"+t("login")+"</a></div>";return}
+if(!m.cart.length){h.innerHTML="<div class='box'>"+t("cartE")+"</div>";return}var s=0;
+h.innerHTML=m.cart.map(function(o){s+=o.price;return"<div class='box'><div class='avc'>"+av(o)+"<div><b>"+lb(o)+"</b> · "+t("card"+o.mode)+"<br>@"+esc(o.rb)+"<br><b>"+rp(o.price)+"</b></div></div><button class='btn2' onclick='rmv("+o.id+")'>"+t("rm")+"</button></div>"}).join("")+"<div class='box'><div class='row'><span>"+t("sP")+"</span><b>"+rp(s)+"</b></div><button class='btn' onclick='co()'>"+t("co")+"</button></div>"}
+function rmv(id){var m=me();m.cart=m.cart.filter(function(x){return x.id!=id});save();bdg();rCart()}
+function co(){var m=me();if(!m||!m.cart.length)return;var a=m.cart;m.cart=[];mk(a)}
+function rOrd(){var m=me(),h=$("ol");if(!m){h.innerHTML="<div class='box'>"+t("need")+" <a class='lk' onclick=\"go('acc')\">"+t("login")+"</a></div>";return}
+h.innerHTML=m.orders.length?m.orders.map(function(o){return"<div class='box'><div class='avc'>"+av(o)+"<div><b>#"+o.oid+"</b> <span class='chip "+(o.proof?"ok":"")+"'>"+t(o.proof?"sent":"unp")+"</span><br>"+lb(o)+" · "+t("card"+o.mode)+"<br><b>"+rp(o.price)+"</b> · @"+esc(o.rb)+"<div class='hint'>"+new Date(o.t).toLocaleString(L?"en-GB":"id-ID")+"</div></div></div>"+(o.proof?"":"<div class='hint'><b>"+t("qr")+"</b></div><img class='pf' src='qris.jpg' alt='' onerror=\"this.style.display='none'\">")+(o.proof?"<img class='pf' src='"+o.proof+"' alt=''><a class='btn2' href='"+WA+"' target='_blank' rel='noopener'>"+t("pwa")+"</a>":"")+"<label class='btn2'>"+t("upl")+"<input type='file' accept='image/*' hidden onchange='proof("+o.id+",this)'></label></div>"}).join(""):"<div class='box'>"+t("ordE")+"</div>"}
+function proof(id,inp){var f=inp.files[0];if(!f)return;var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*s;c.height=im.height*s;c.getContext("2d").drawImage(im,0,0,c.width,c.height);
+me().orders.filter(function(x){return x.id==id})[0].proof=c.toDataURL("image/jpeg",.6);save();rOrd();toast(t("pok"))};im.src=r.result};r.readAsDataURL(f)}
+function tab(k){am=k;$("tin").className=k=="in"?"on":"";$("tup").className=k=="up"?"on":"";$("ab").textContent=t(k=="in"?"login":"reg")}
+function doAuth(){var n=$("an").value.trim(),p=$("ap").value,e=$("ae");e.textContent="";
+if(!UR.test(n)){e.textContent=t("eNm");return}if(p.length<6){e.textContent=t("ePw");return}var key="u_"+n.toLowerCase();
+H(key+":"+p+":dz").then(function(h){if(key=="u_davinzblox"&&h==OWNER_H&&!db[key])db[key]={n:"DavinzBlox",h:h,cart:[],orders:[]};if(am=="up"){if(db[key]||key=="u_davinzblox"){e.textContent=t("eEx");return}db[key]={n:n,h:h,cart:[],orders:[]}}else{var u=db[key];if(!u||u.h!=h){e.textContent=t("eLog");return}}
+ses=key;save();$("ap").value="";bdg();rAcc();if(after){go("buy");var f=after;after=null;f()}else go("home")})}
+var OWNER_H="615f278188bda1a73ce70d82012a0b2be23ff94851b5c97f377a3a6fb61391b9";
+function rOwn(){var d=new Date().toDateString(),n=0,r=0,a=0;for(var k in db){(db[k].orders||[]).forEach(function(o){a++;if(new Date(o.t).toDateString()==d){n++;r+=o.price}})}
+$("oT").textContent=n;$("oR").textContent=rp(r);$("oA").textContent=a;
+var h="";[["u","Robux via Username"],["g","Robux via Gamepass"],["b","Brookhaven Passes"]].forEach(function(c){h+="<div style='margin-top:12px;font-weight:800'>"+c[1]+"</div>";HARGA[c[0]].forEach(function(p,i){h+="<div class='row'><span>"+esc(c[0]=="b"?p[0]:p[0]+" Robux")+"</span><input class='f' type='number' style='width:130px;padding:6px' value='"+p[1]+"' oninput=\"sp('"+c[0]+"',"+i+",this.value)\"></div>"})});$("oP").innerHTML=h}
+function sp(k,i,v){HARGA[k][i][1]=parseInt(v)||0}
+function cpy(){var tx="var HARGA="+JSON.stringify(HARGA).replace(/\]\],/g,"]],\n")+";";try{navigator.clipboard.writeText(tx);toast("Kode harga disalin!")}catch(e){toast("Gagal menyalin")}}
+function logout(){ses=null;save();bdg();rAcc()}
+function rAcc(){var m=me();$("authF").style.display=m?"none":"block";$("accI").style.display=m?"block":"none";$("n5t").textContent=t(m?"accI":"acc");if(m)$("hi").textContent=t("hi",{n:m.n});var ow=!!m&&m.h==OWNER_H;$("own").style.display=ow?"block":"none";if(ow)rOwn();tab(am)}
+function sw(){L=L?0:1;LS("dz_l",L);aL()}
+function aL(){document.documentElement.lang=L?"en":"id";document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=t(e.dataset.t)});document.querySelectorAll("[data-p]").forEach(function(e){e.placeholder=t(e.dataset.p)});$("lg").textContent=L?"EN":"ID";upd();rCart();rOrd();rAcc()}
+$("q").onkeydown=function(e){if(e.key=="Enter")op(/brook/i.test(this.value)?"b":/gamepass/i.test(this.value)?"g":"u")};
+M.u.pts.length;$("rg").value=80;aL();bdg();
+</script></body></html>
